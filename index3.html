@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js"></script>
+</head>
+<body>
+    <script>
+        //Task: Given an array of numbers, return a new array with each number doubled.
+        const numbers = [1, 2, 3, 4];
+
+function doubleNumber(arr){
+const double=arr.map((num)=>{
+  return num*2;
+})
+return double; 
+}
+const doubleArrray=doubleNumber(numbers);
+console.log(doubleArrray);
+ 
+  //Task: Given an array of ages, return only those who are 18 or older.
+
+//const ages = [12, 19, 21, 17, 30];
+function filterAdults(ages) {
+  return ages.filter(function(age) {
+    return age >= 18;
+  });
+}
+const ages = [12, 19, 21, 17, 30];
+const adults = filterAdults(ages);
+console.log(adults);
+
+//Task: Given an array of prices, return the total sum.
+//const prices = [10, 20, 15];
+
+function totalSum(prices) {
+  return prices.reduce(function(total, price) {
+    return total + price;
+  }, 0);
+}
+const prices = [10, 20, 15];
+const total = totalSum(prices);
+console.log(total); 
+
+    </script>
+    
+</body>
+</html>
